@@ -111,6 +111,19 @@ h2 {
     background: black;
     border: 2px solid #4ade80;
     padding: 15px;
+    text-align: left;
+    min-width: 300px;
+}
+
+/* links */
+a {
+    color: #4ade80;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
 /* buttons */
@@ -142,7 +155,7 @@ h2 {
     font-size: 20px;
 }
 
-/* IMPORTANT: zoom stability fix */
+/* stability fix */
 .section {
     box-sizing: border-box;
 }
@@ -156,12 +169,14 @@ h2 {
 <div class="viewport">
     <div class="container" id="container">
 
+        <!-- HERO -->
         <div class="section">
             <div class="subtitle">// BACKEND ENGINEER</div>
             <h1>GEORGE<br>TSAKOUMAKOS</h1>
             <p>Backend Systems • Reverse Engineering • Game Servers</p>
         </div>
 
+        <!-- ABOUT -->
         <div class="section">
             <h2>ABOUT</h2>
 
@@ -175,6 +190,7 @@ h2 {
             <p>Ξεκίνησα από MMO private servers και κατέληξα backend engineering.</p>
         </div>
 
+        <!-- SKILLS -->
         <div class="section">
             <h2>SKILLS</h2>
 
@@ -189,6 +205,7 @@ h2 {
             </div>
         </div>
 
+        <!-- EXPERIENCE -->
         <div class="section">
             <h2>EXPERIENCE</h2>
 
@@ -210,13 +227,32 @@ h2 {
             </div>
         </div>
 
+        <!-- CONTACT -->
         <div class="section">
             <h2>CONTACT</h2>
 
             <div class="contact-box">
-                <p>george_tsakoum@gmail.com</p>
-                <p>linkedin.com/in/george-tsakoum</p>
-                <p>+30 6907009487</p>
+                <p>✉️ <a href="mailto:george_tsakoum@gmail.com">george_tsakoum@gmail.com</a></p>
+
+                <p>💼 
+                    <a href="https://linkedin.com/in/george-tsakoum" target="_blank">
+                        linkedin.com/in/george-tsakoum
+                    </a>
+                </p>
+
+                <p>📘 
+                    <a href="https://facebook.com/elayesgg" target="_blank">
+                        facebook.com/elayesgg
+                    </a>
+                </p>
+
+                <p>📸 
+                    <a href="https://instagram.com/elayesgg" target="_blank">
+                        instagram.com/elayesgg
+                    </a>
+                </p>
+
+                <p>📱 <a href="tel:+306907009487">+30 6907009487</a></p>
             </div>
 
             <p style="margin-top:20px;">
@@ -227,6 +263,7 @@ h2 {
     </div>
 </div>
 
+<!-- NAV -->
 <div class="nav-buttons">
     <button onclick="moveUp()">UP</button>
     <button onclick="moveDown()">DOWN</button>
